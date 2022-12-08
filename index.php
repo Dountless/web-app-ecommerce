@@ -54,10 +54,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="index.html">
-                            
-                                <img src="img/logo-2.png" alt="">
-                            </a>
+
                         </div>
                     </div>
 
