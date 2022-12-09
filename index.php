@@ -101,12 +101,12 @@
             <div class="row it_works">
               <?php
 //                         $dbconfig = parse_ini_file(".env");
-                        $host = "db" //$dbconfig["DB_HOST"];
-                        $user = "deepak1" //$dbconfig["DB_USERNAME"];
-                        $pass =  "deepak123" //$dbconfig["DB_PASSWORD"];
-                        $db = "ecomdb" //$dbconfig["DB_DATABASE"];
+                        $host = "db";//$dbconfig["DB_HOST"];
+                        $user = "deepak1"; //$dbconfig["DB_USERNAME"];
+                        $pass = "deepak123"; //$dbconfig["DB_PASSWORD"];
+                        $db = "ecomdb"; //$dbconfig["DB_DATABASE"];
 
-                        $link = mysqli_connect($host, $user, $pass, $db);
+                        $link = mysqli_connect($host,$user,$pass,$db);
 
                         if ($link) {
                         $res = mysqli_query($link, "select * from products;");
