@@ -101,10 +101,10 @@
             <div class="row it_works">
               <?php
 //                         $dbconfig = parse_ini_file(".env");
-                        $host = "db";//$dbconfig["DB_HOST"];
-                        $user = "deepak1"; //$dbconfig["DB_USERNAME"];
-                        $pass = "deepak123"; //$dbconfig["DB_PASSWORD"];
-                        $db = "ecomdb"; //$dbconfig["DB_DATABASE"];
+                        $host = getenv('DB_HOST');//$dbconfig["DB_HOST"];
+                        $user = getenv('DB_USERNAME'); //$dbconfig["DB_USERNAME"];
+                        $pass = getenv('DB_PASSWORD'); //$dbconfig["DB_PASSWORD"];
+                        $db = getenv('DB_DATABASE'); //$dbconfig["DB_DATABASE"];
 
                         $link = mysqli_connect($host,$user,$pass,$db);
 
