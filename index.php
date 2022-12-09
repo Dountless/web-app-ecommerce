@@ -100,8 +100,13 @@
             </div>
             <div class="row it_works">
               <?php
+                        $dbconfig = parse_ini_file(".env");
+                        $host = $dbconfig["DB_HOST"];
+                        $user = $dbconfig["DB_USERNAME"];
+                        $pass = $dbconfig["DB_PASSWORD"];
+                        $db = $dbconfig["DB_DATABASE"];
 
-                        $link = mysqli_connect('db', 'deepak', 'deepak123', 'ecomdb');
+                        $link = mysqli_connect($host, $user, $pass, $db);
 
                         if ($link) {
                         $res = mysqli_query($link, "select * from products;");
