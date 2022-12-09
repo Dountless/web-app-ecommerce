@@ -100,11 +100,11 @@
             </div>
             <div class="row it_works">
               <?php
-                        $dbconfig = parse_ini_file(".env");
-                        $host = $dbconfig["DB_HOST"];
-                        $user = $dbconfig["DB_USERNAME"];
-                        $pass = $dbconfig["DB_PASSWORD"];
-                        $db = $dbconfig["DB_DATABASE"];
+//                         $dbconfig = parse_ini_file(".env");
+                        $host = "db" //$dbconfig["DB_HOST"];
+                        $user = "deepak1" //$dbconfig["DB_USERNAME"];
+                        $pass =  "deepak123" //$dbconfig["DB_PASSWORD"];
+                        $db = "ecomdb" //$dbconfig["DB_DATABASE"];
 
                         $link = mysqli_connect($host, $user, $pass, $db);
 
